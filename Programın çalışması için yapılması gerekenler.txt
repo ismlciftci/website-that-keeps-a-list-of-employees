@@ -1,0 +1,5 @@
+Projenin çalýþtýrýlmasý için bilgisayara node.js kurulumu yapýlmalýdýr.
+Proje Visual Studio Code açýlmalýdýr.
+Angular-cli kurulumu yapýlmalýdýr. Kurulumu için VScode'un terminalinde npm install -g @angular/cli yazýlmalýdýr. 
+git-bash kurulumu yapýlmalýdýr. Proje dosyasýna sað týklanarak git bash ile terminal açýlýr. "ng serve -o" komutu yazýlýr.
+Ardýndan proje açýlýr.

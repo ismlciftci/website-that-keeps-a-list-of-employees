@@ -1,0 +1,42 @@
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Buraya giriniz..." aria-label="Recipient's username" aria-describedby="button-addon2" (keyup.enter)="AddTodo(todoText)" #todoText>
+    <div class="input-group-append">
+        
+
+
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="AddTodo(todoText)" >Ekle</button>
+    </div>
+  
+
+  </div>
+
+  <div class="panel panel-default" *ngIf = "todos.length ; else mytemp">
+  <div class="panel panel-heading">Elemanlar</div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Adı</th>
+        <th scope="col">Ekleme tarihi</th>
+        <th scope="col">Sil</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+      <tr *ngFor= "let todo of todos; let i = index">
+       <th scope="row">{{i+1}}</th>
+        <td>{{ todo.text }}</td>
+        <td>{{todo.createdAt | date: 'dd.MM.yyyy / hh:mm:ss'}}</td>
+        <td><button class ="btn btn-danger" (click)="RemoveTodo(todo)"> Sil</button></td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 >Sadelik zarafetin zirvesidir...</h2>
+
+  <ng-template #mytemp>
+    <div class="alert alert-danger" role="alert" >Eleman yok.</div>
+  </ng-template>
+  
