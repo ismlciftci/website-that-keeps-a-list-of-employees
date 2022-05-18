@@ -1,3 +1,4 @@
+![Ekran Görüntüsü (34)](https://user-images.githubusercontent.com/91139120/169023450-c760d989-af41-4945-8077-55cd91b63fc6.png)
 # AngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
